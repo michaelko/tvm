@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#
+# lejosdl: Downloads executables to the RCX
+#
+# 12/12/02  created L. Griffiths
+
+
+if [ $OSTYPE == "cygwin" ]; then
+  SEPARATOR=";"
+else
+  SEPARATOR=":"
+fi
+
+if [ -z "$LEJOS_HOME" ]; then 
+  echo LEJOS_HOME is not defined
+else
+  java -Djava.library.path="$LEJOS_HOME/bin" -classpath "$LEJOS_HOME/lib/jtools.jar$SEPARATOR$LEJOS_HOME/lib/pcrcxcomm.jar" js.tools.Lejosdl $*
+fi

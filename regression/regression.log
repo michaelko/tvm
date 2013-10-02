@@ -1,0 +1,43 @@
+----------------- Run of Test04.tvm
+Segmentation fault (core dumped)
+----------------- Run of Test06.tvm
+Assertion violation: 37
+----------------- Run of Test07.tvm
+Assertion violation: 41
+----------------- Run of Test11.tvm
+Segmentation fault (core dumped)
+----------------- Run of Test12.tvm
+Segmentation fault (core dumped)
+----------------- Run of Test13.tvm
+Segmentation fault (core dumped)
+----------------- Run of Test14.tvm
+Segmentation fault (core dumped)
+----------------- Run of Test26.tvm
+Segmentation fault (core dumped)
+----------------- Run of Test28.tvm
+Segmentation fault (core dumped)
+----------------- Run of Test33.tvm
+Segmentation fault (core dumped)
+----------------- Run of TestRuntime.tvm
+Segmentation fault (core dumped)
+----------------- Run of TestPriorities.tvm
+*** UNCAUGHT EXCEPTION/ERROR: 
+--  Exception class   : 8
+--  Thread            : 1
+--  Method signature  : 51
+--  Root method sig.  : 0
+--  Bytecode offset   : 26
+----------------- Run of TestDaemon.tvm
+Segmentation fault (core dumped)
+----------------- Run of TestThreadState.tvm
+Segmentation fault (core dumped)
+----------------- Run of TestMonitor.tvm
+Assertion violation: 37
+----------------- Run of PriorityInversion.tvm
+Segmentation fault (core dumped)
+----------------- Run of TestNat.tvm
+Assertion violation: 37
+----------------- Run of TestStringBuffer.tvm
+Segmentation fault (core dumped)
+----------------- Run of TestFloatToIntBits.tvm
+Segmentation fault (core dumped)

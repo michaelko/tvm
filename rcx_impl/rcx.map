@@ -1,0 +1,439 @@
+Archive member included because of file (symbol)
+
+/home/local/david/java/h8300/librcx/lib/librcx.a(init.o)
+                              (_start)
+/home/local/david/java/h8300/librcx/lib/librcx.a(mulsi3.o)
+                              interpreter.o (__mulsi3)
+/home/local/david/java/h8300/librcx/lib/librcx.a(modsi3.o)
+                              interpreter.o (__modsi3)
+/home/local/david/java/h8300/librcx/lib/librcx.a(divsi3.o)
+                              interpreter.o (__divsi3)
+/home/local/david/java/h8300/librcx/lib/librcx.a(cmpsi2.o)
+                              interpreter.o (__cmpsi2)
+/home/local/david/java/h8300/librcx/lib/librcx.a(rcall2.o)
+                              poll.o (__rcall2)
+/home/local/david/java/h8300/librcx/lib/librcx.a(mulhi3.o)
+                              memory.o (__mulhi3)
+/home/local/david/java/h8300/librcx/lib/librcx.a(rcall0.o)
+                              native.o (__rcall0)
+/home/local/david/java/h8300/librcx/lib/librcx.a(rcall1.o)
+                              native.o (__rcall1)
+/home/local/david/java/h8300/librcx/lib/librcx.a(rcall3.o)
+                              native.o (__rcall3)
+/home/local/david/java/h8300/librcx/lib/librcx.a(rcall4.o)
+                              native.o (__rcall4)
+/home/local/david/java/h8300/librcx/lib/librcx.a(umodhi3.o)
+                              main.o (__umodhi3)
+/home/local/david/java/h8300/librcx/float/libfloat.a(cmpsf2.o)
+                              interpreter.o (__eqsf2)
+/home/local/david/java/h8300/librcx/float/libfloat.a(addsf3.o)
+                              interpreter.o (__addsf3)
+/home/local/david/java/h8300/librcx/float/libfloat.a(negsf2.o)
+                              interpreter.o (__negsf2)
+/home/local/david/java/h8300/librcx/float/libfloat.a(mulsf3.o)
+                              interpreter.o (__mulsf3)
+/home/local/david/java/h8300/librcx/float/libfloat.a(divsf3.o)
+                              interpreter.o (__divsf3)
+/home/local/david/java/h8300/librcx/float/libfloat.a(floatsisf.o)
+                              interpreter.o (__floatsisf)
+/home/local/david/java/h8300/librcx/float/libfloat.a(fixsfsi.o)
+                              interpreter.o (__fixsfsi)
+/home/local/david/java/h8300/librcx/float/libfloat.a(startsf.o)
+                              /home/local/david/java/h8300/librcx/float/libfloat.a(addsf3.o) (__startsf)
+/home/local/david/java/h8300/librcx/float/libfloat.a(normalsf.o)
+                              /home/local/david/java/h8300/librcx/float/libfloat.a(addsf3.o) (__normalizesf)
+/home/local/david/java/h8300/librcx/float/libfloat.a(joinsf.o)
+                              /home/local/david/java/h8300/librcx/float/libfloat.a(addsf3.o) (__joinsf)
+/home/local/david/java/h8300/librcx/float/libfloat.a(expandsf.o)
+                              /home/local/david/java/h8300/librcx/float/libfloat.a(fixsfsi.o) (__expandsf)
+
+Allocating common symbols
+Common symbol       size              file
+
+hookCommand         0x1               main.o
+throttle            0x1               poll.o
+arrayIndexOutOfBoundsException
+                    0x2               exceptions.o
+bootThread          0x2               main.o
+tempBytePtr         0x2               interpreter.o
+pc                  0x2               interpreter.o
+tempStackWord       0x4               interpreter.o
+timerdata1          0x6               main.o
+nextByte            0x2               main.o
+arithmeticException
+                    0x2               exceptions.o
+gMakeRequest        0x1               interpreter.o
+illegalStateException
+                    0x2               exceptions.o
+tempWordPtr         0x2               interpreter.o
+tempByte            0x1               interpreter.o
+classCastException  0x2               exceptions.o
+stackOverflowError  0x2               exceptions.o
+buffer              0x9               main.o
+stackTop            0x2               interpreter.o
+tempFloat           0x4               interpreter.o
+localsBase          0x2               interpreter.o
+powerOffTime        0x4               main.o
+tempInt             0x2               interpreter.o
+sensors             0x18              sensors.o
+isReadyToTransfer   0x1               main.o
+installedBinary     0x2               language.o
+gThreadCounter      0x1               threads.o
+threadQ             0x14              threads.o
+throttle_count      0x1               poll.o
+numread             0x1               main.o
+old_sensor_values   0x6               poll.o
+hasProgram          0x1               main.o
+outOfMemoryError    0x2               exceptions.o
+seqNumber           0x2               main.o
+nullPointerException
+                    0x2               exceptions.o
+noSuchMethodError   0x2               exceptions.o
+currentIndex        0x2               main.o
+poller              0x2               poll.o
+gProgramNumber      0x1               threads.o
+old_button_state    0x2               poll.o
+interruptedException
+                    0x2               exceptions.o
+sys_time            0x4               systime.o
+mmStart             0x2               main.o
+illegalArgumentException
+                    0x2               exceptions.o
+error               0x2               exceptions.o
+tempConstRec        0x2               interpreter.o
+gRequestCode        0x1               interpreter.o
+status              0x2               main.o
+currentThread       0x2               threads.o
+illegalMonitorStateException
+                    0x2               exceptions.o
+timerdata0          0x28              main.o
+valid               0x1               main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00008000         r
+mem              0x00008000         0x00006f32
+romdata1         0x0000ef32         0x000000cf
+motorIO          0x0000f000         0x00000004
+extra1           0x0000f004         0x00000b7c
+hwreserved1      0x0000fb80         0x00000200
+romdata2         0x0000fd80         0x00000010
+intvectors       0x0000fd90         0x00000030
+stack            0x0000fdc0         0x00000220
+extra2           0x0000ff80         0x00000008
+hwreserved2      0x0000ff88         0x00000008
+hwregisters      0x0000ff90         0x00000070
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.rom            0x00000000        0x0
+                0x000036ba                _rom_ocia_handler = 0x36ba
+
+.extra1         0x0000f004        0x0
+                0x0000f004                __extra_start = .
+                0x0000f004                __extra_end = .
+
+.mem            0x00008000     0x3fa4
+                0x00008000                __text_begin = .
+ *(.init)
+ .init          0x00008000       0x32 /home/local/david/java/h8300/librcx/lib/librcx.a(init.o)
+                0x00008000                _start
+ *(.text)
+ .text          0x00008032     0x16d4 interpreter.o
+                               0x16dc (size before relaxing)
+                0x00008032                do_goto
+                0x0000808c                do_fcmp
+                0x00008186                array_store_helper
+                0x00008140                array_load_helper
+                0x000081a2                engine
+                0x0000805c                do_isub
+ .text          0x00009706      0x6d8 threads.o
+                                0x6e2 (size before relaxing)
+                0x00009724                update_stack_frame
+                0x00009750                init_thread
+                0x00009c90                enter_monitor
+                0x00009c16                monitor_notify_unchecked
+                0x00009d58                enqueue_thread
+                0x00009d9a                set_thread_priority
+                0x00009d0e                dequeue_thread
+                0x00009cf6                exit_monitor
+                0x00009706                current_stackframe
+                0x00009bf2                monitor_notify
+                0x00009d0c                join_thread
+                0x00009b64                monitor_wait
+                0x00009736                update_registers
+                0x00009818                switch_thread
+ .text          0x00009dde      0x1be exceptions.o
+                                0x1c0 (size before relaxing)
+                0x00009dde                init_exceptions
+                0x00009e58                throw_exception
+ .text          0x00009f9c      0x136 poll.o
+                0x00009fd2                poll_inputs
+                0x00009f9c                set_poller
+ .text          0x0000a0d2      0x45e memory.o
+                                0x468 (size before relaxing)
+                0x0000a290                new_multi_array
+                0x0000a522                getHeapFree
+                0x0000a17a                comp_array_size
+                0x0000a450                memory_add_region
+                0x0000a10e                new_object_checked
+                0x0000a444                memory_init
+                0x0000a218                free_array
+                0x0000a0ea                memcheck_allocate
+                0x0000a22a                reallocate_array
+                0x0000a47e                allocate
+                0x0000a382                get_word
+                0x0000a51a                getHeapSize
+                0x0000a190                new_primitive_array
+                0x0000a202                get_array_size
+                0x0000a3b6                store_word
+                0x0000a50c                deallocate
+                0x0000a3e8                make_word
+                0x0000a134                new_object_for_class
+                0x0000a0d2                zero_mem
+                0x0000a52a                getRegionAddress
+ .text          0x0000a530      0x45e language.o
+                                0x468 (size before relaxing)
+                0x0000a64c                dispatch_special_checked
+                0x0000a8b0                do_return
+                0x0000a588                dispatch_static_initializer
+                0x0000a530                get_class_index
+                0x0000a68e                dispatch_special
+                0x0000a938                instance_of
+                0x0000a538                find_method
+                0x0000a5ba                dispatch_virtual
+ .text          0x0000a98e      0x444 native.o
+                                0x44c (size before relaxing)
+                0x0000a98e                dispatch_native
+ .text          0x0000add2      0x7f2 main.o
+                                0x7f8 (size before relaxing)
+                0x0000aedc                wait_for_release
+                0x0000af20                reset_rcx_serial
+                0x0000ae04                wait_for_power_release
+                0x0000ae3a                trace
+                0x0000af3a                switch_thread_hook
+                0x0000aeb8                handle_uncaught_exception
+                0x0000add2                delay
+                0x0000afb2                main
+ .text          0x0000b5c4       0xbc sensors.o
+                0x0000b5c4                poll_sensors
+ .text          0x0000b680       0x26 systime.o
+                0x0000b680                systime_handler
+ .text          0x0000b6a6      0x178 llc.o
+                                0x1a6 (size before relaxing)
+                0x0000b6fa                llc_read
+                0x0000b7c8                llc_rxerror_handler
+                0x0000b7dc                llc_rxerror_core
+                0x0000b754                llc_rx_core
+                0x0000b6d2                llc_writebytes
+                0x0000b740                llc_rx_handler
+                0x0000b738                llc_send_error
+                0x0000b7f8                llc_tx_core
+                0x0000b730                llc_is_sending
+                0x0000b6a6                llc_init
+                0x0000b7e4                llc_tx_handler
+ .text          0x0000b81e       0x24 /home/local/david/java/h8300/librcx/lib/librcx.a(init.o)
+                0x0000b81e                _init
+ .text          0x0000b842       0x1c /home/local/david/java/h8300/librcx/lib/librcx.a(mulsi3.o)
+                0x0000b842                __mulsi3
+ .text          0x0000b85e       0x2c /home/local/david/java/h8300/librcx/lib/librcx.a(modsi3.o)
+                0x0000b85e                __modsi3
+ .text          0x0000b88a       0x1c /home/local/david/java/h8300/librcx/lib/librcx.a(divsi3.o)
+                0x0000b88a                __divsi3
+ .text          0x0000b8a6       0x1a /home/local/david/java/h8300/librcx/lib/librcx.a(cmpsi2.o)
+                0x0000b8a6                __cmpsi2
+ .text          0x0000b8c0       0x10 /home/local/david/java/h8300/librcx/lib/librcx.a(rcall2.o)
+                0x0000b8c0                __rcall2
+ .text          0x0000b8d0       0x10 /home/local/david/java/h8300/librcx/lib/librcx.a(mulhi3.o)
+                0x0000b8d0                __mulhi3
+ .text          0x0000b8e0        0xa /home/local/david/java/h8300/librcx/lib/librcx.a(rcall0.o)
+                0x0000b8e0                __rcall0
+ .text          0x0000b8ea        0xc /home/local/david/java/h8300/librcx/lib/librcx.a(rcall1.o)
+                0x0000b8ea                __rcall1
+ .text          0x0000b8f6       0x18 /home/local/david/java/h8300/librcx/lib/librcx.a(rcall3.o)
+                0x0000b8f6                __rcall3
+ .text          0x0000b90e       0x1e /home/local/david/java/h8300/librcx/lib/librcx.a(rcall4.o)
+                0x0000b90e                __rcall4
+ .text          0x0000b92c       0x12 /home/local/david/java/h8300/librcx/lib/librcx.a(umodhi3.o)
+                0x0000b92c                __umodhi3
+ .text          0x0000b93e       0x74 /home/local/david/java/h8300/librcx/float/libfloat.a(cmpsf2.o)
+                0x0000b946                __cmpsf2
+                0x0000b93e                __nesf2
+                0x0000b942                __gtsf2
+                0x0000b93e                __lesf2
+                0x0000b93e                __eqsf2
+                0x0000b942                __gesf2
+                0x0000b93e                __ltsf2
+ .text          0x0000b9b2       0xd6 /home/local/david/java/h8300/librcx/float/libfloat.a(addsf3.o)
+                0x0000b9b2                __subsf3
+                0x0000b9bc                __addsf3
+ .text          0x0000ba88        0x4 /home/local/david/java/h8300/librcx/float/libfloat.a(negsf2.o)
+                0x0000ba88                __negsf2
+ .text          0x0000ba8c       0xa0 /home/local/david/java/h8300/librcx/float/libfloat.a(mulsf3.o)
+                0x0000ba8c                __mulsf3
+ .text          0x0000bb2c       0x90 /home/local/david/java/h8300/librcx/float/libfloat.a(divsf3.o)
+                0x0000bb2c                __divsf3
+ .text          0x0000bbbc       0x5a /home/local/david/java/h8300/librcx/float/libfloat.a(floatsisf.o)
+                0x0000bbbc                __ufloatsisf
+                0x0000bbc4                __floatsisf
+ .text          0x0000bc16       0x7e /home/local/david/java/h8300/librcx/float/libfloat.a(fixsfsi.o)
+                0x0000bc16                __fixsfsi
+                0x0000bc20                __fixunssfsi
+ .text          0x0000bc94       0x36 /home/local/david/java/h8300/librcx/float/libfloat.a(startsf.o)
+                0x0000bc94                __startsf
+                0x0000bcbe                __finishsf
+ .text          0x0000bcca       0x10 /home/local/david/java/h8300/librcx/float/libfloat.a(normalsf.o)
+                0x0000bcca                __normalizesf
+ .text          0x0000bcda       0x86 /home/local/david/java/h8300/librcx/float/libfloat.a(joinsf.o)
+                0x0000bcda                __joinsf
+ .text          0x0000bd60       0x42 /home/local/david/java/h8300/librcx/float/libfloat.a(expandsf.o)
+                0x0000bd60                __expandsf
+ *(.rodata)
+ .rodata        0x0000bda2      0x198 interpreter.o
+ .rodata        0x0000bf3a        0xe threads.o
+ .rodata        0x0000bf48       0x5c native.o
+ *(.vectors)
+                0x0000bfa4                __text_end = .
+
+.bss            0x0000bfb0      0x10c
+                0x0000bfb0                __bss_start = .
+ *(.bss)
+ .bss           0x0000bfb0        0xa exceptions.o
+ .bss           0x0000bfba        0x6 memory.o
+ .bss           0x0000bfc0        0x4 language.o
+ .bss           0x0000bfc4        0x4 sensors.o
+ .bss           0x0000bfc8        0xc llc.o
+ *(COMMON)
+ COMMON         0x0000bfd4       0x1b interpreter.o
+                                  0x0 (size before relaxing)
+                0x0000bfd4                tempBytePtr
+                0x0000bfd6                pc
+                0x0000bfd8                tempStackWord
+                0x0000bfdc                gMakeRequest
+                0x0000bfde                tempWordPtr
+                0x0000bfe0                tempByte
+                0x0000bfe2                stackTop
+                0x0000bfe4                tempFloat
+                0x0000bfe8                localsBase
+                0x0000bfea                tempInt
+                0x0000bfec                tempConstRec
+                0x0000bfee                gRequestCode
+ *fill*         0x0000bfef        0x1 00
+ COMMON         0x0000bff0       0x28 threads.o
+                                  0x0 (size before relaxing)
+                0x0000bff0                gThreadCounter
+                0x0000c000                threadQ
+                0x0000c014                gProgramNumber
+                0x0000c016                currentThread
+ COMMON         0x0000c018       0x18 exceptions.o
+                                  0x0 (size before relaxing)
+                0x0000c018                arrayIndexOutOfBoundsException
+                0x0000c01a                arithmeticException
+                0x0000c01c                illegalStateException
+                0x0000c01e                classCastException
+                0x0000c020                stackOverflowError
+                0x0000c022                outOfMemoryError
+                0x0000c024                nullPointerException
+                0x0000c026                noSuchMethodError
+                0x0000c028                interruptedException
+                0x0000c02a                illegalArgumentException
+                0x0000c02c                error
+                0x0000c02e                illegalMonitorStateException
+ COMMON         0x0000c030        0xe poll.o
+                                  0x0 (size before relaxing)
+                0x0000c030                throttle
+                0x0000c031                throttle_count
+                0x0000c034                old_sensor_values
+                0x0000c03a                poller
+                0x0000c03c                old_button_state
+ COMMON         0x0000c03e        0x2 language.o
+                                  0x0 (size before relaxing)
+                0x0000c03e                installedBinary
+ COMMON         0x0000c040       0x59 main.o
+                                  0x0 (size before relaxing)
+                0x0000c040                hookCommand
+                0x0000c042                bootThread
+                0x0000c044                timerdata1
+                0x0000c04a                nextByte
+                0x0000c050                buffer
+                0x0000c05c                powerOffTime
+                0x0000c060                isReadyToTransfer
+                0x0000c061                numread
+                0x0000c062                hasProgram
+                0x0000c064                seqNumber
+                0x0000c066                currentIndex
+                0x0000c068                mmStart
+                0x0000c06a                status
+                0x0000c070                timerdata0
+                0x0000c098                valid
+ *fill*         0x0000c099        0x7 00
+ COMMON         0x0000c0a0       0x18 sensors.o
+                                  0x0 (size before relaxing)
+                0x0000c0a0                sensors
+ COMMON         0x0000c0b8        0x4 systime.o
+                                  0x0 (size before relaxing)
+                0x0000c0b8                sys_time
+                0x0000c0bc                __end = .
+
+.data           0x0000c0bc       0x2c
+                0x0000c0bc                __data_begin = .
+ *(.data)
+ .data          0x0000c0bc        0x4 exceptions.o
+ .data          0x0000c0c0        0xc memory.o
+                0x0000c0c0                typeSize
+ .data          0x0000c0cc        0xa main.o
+                0x0000c0cc                versionArray
+ .data          0x0000c0d6       0x10 sensors.o
+ .data          0x0000c0e6        0x2 llc.o
+                0x0000c0e8                __data_end = .
+                0x0000c0e8                __mem_start = ALIGN (0x2)
+
+.romdata1       0x0000ef32        0x0
+                0x0000ef32                __romdata1 = .
+                0x0000ef32                _angle_state = 0x0
+                0x0000ef52                _serial_output_buffer = 0x20
+                0x0000ef93                _transmitting = 0x61
+
+.romdata2       0x0000fd80        0x0
+                0x0000fd83                _rom_port4_ddr = 0x3
+                0x0000fd84                _rom_port5_ddr = 0x4
+
+.intvectors     0x0000fd90        0x0
+                0x0000fda2                _ocia_vector = 0x12
+                0x0000fdb4                _eri_vector = 0x24
+                0x0000fdb6                _rxi_vector = 0x26
+                0x0000fdb8                _txi_vector = 0x28
+                0x0000fdba                _tei_vector = 0x2a
+
+.hwregisters    0x0000ff90        0x0
+                0x0000ff90                _T_IER = 0x0
+                0x0000ffb5                _PORT4_DDR = 0x25
+                0x0000ffb7                _PORT4 = 0x27
+                0x0000ffb8                _PORT5_DDR = 0x28
+                0x0000ffd0                _T1_CR = 0x40
+                0x0000ffd1                _T1_CSR = 0x41
+                0x0000ffd2                _T1_CORA = 0x42
+                0x0000ffd8                _S_MR = 0x48
+                0x0000ffd9                _S_BRR = 0x49
+                0x0000ffda                _S_CR = 0x4a
+                0x0000ffdb                _S_TDR = 0x4b
+                0x0000ffdc                _S_SR = 0x4c
+                0x0000ffdd                _S_RDR = 0x4d
+LOAD interpreter.o
+LOAD threads.o
+LOAD exceptions.o
+LOAD poll.o
+LOAD memory.o
+LOAD language.o
+LOAD native.o
+LOAD main.o
+LOAD sensors.o
+LOAD systime.o
+LOAD llc.o
+LOAD /home/local/david/java/h8300/librcx/lib/librcx.a
+LOAD /home/local/david/java/h8300/librcx/float/libfloat.a
+LOAD /usr/local/h8300-hms/lib/libc.a
+OUTPUT(../bin/lejos.srec coff-h8300)
