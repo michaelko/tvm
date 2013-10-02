@@ -21,12 +21,7 @@ Segmentation fault (core dumped)
 ----------------- Run of TestRuntime.tvm
 Segmentation fault (core dumped)
 ----------------- Run of TestPriorities.tvm
-*** UNCAUGHT EXCEPTION/ERROR: 
---  Exception class   : 8
---  Thread            : 1
---  Method signature  : 51
---  Root method sig.  : 0
---  Bytecode offset   : 26
+Segmentation fault (core dumped)
 ----------------- Run of TestDaemon.tvm
 Segmentation fault (core dumped)
 ----------------- Run of TestThreadState.tvm

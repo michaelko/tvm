@@ -54,4 +54,6 @@
 #define isSending_4_5Z 47
 #define isSendError_4_5Z 48
 #define getRegionAddress_4_5I 49
+#define write_4Ljava_3lang_3String_2_5V 50
+#define read_4_5Ljava_3lang_3String_2 51
 #endif // _SPECIALSIGNATURES_H

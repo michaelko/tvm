@@ -349,6 +349,37 @@ void dispatch_native (TWOBYTES signature, STACKWORD *paramBase)
       printf("> Get region address - 0x%lX\n", (int)region);
       push_word ((int)region);
       return;
+      
+/** ZAZZY: New native methods
+	NOTE: paramBase[0] is the object itself for non-static methods!
+ */
+
+	case write_4Ljava_3lang_3String_2_5V:
+	{
+	  char* str = string2chp( (String*)word2ptr(paramBase[0]) );
+	  printf("%s", str);
+	  free(str);
+	  return;
+	}
+	case read_4_5Ljava_3lang_3String_2:
+	{
+	  /*
+	  // TODO check for JNULL
+	  char* str = malloc(255);
+	  String *strObj;
+
+	  gets(str);
+	  strObj = new_string_checked (str, pc - 1);
+	  push_ref( ptr2ref(strObj) );
+	  free(str);
+	  */
+	  // fugg XXDD
+      return;
+	}
+      
+      
+      
+      
     default:
 #ifdef DEBUG_METHODS
       printf("Received bad native method code: %d\n", signature);

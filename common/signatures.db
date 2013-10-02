@@ -94,3 +94,8 @@ isSendError()Z
 # josx.platform.rcx.PersistentMemoryArea
 getRegionAddress()I
 
+
+# ledos.pc.Console
+write(Ljava/lang/String;)V
+read()Ljava/lang/String;
+

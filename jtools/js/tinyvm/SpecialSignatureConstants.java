@@ -54,6 +54,8 @@ public interface SpecialSignatureConstants {
     "read()I",
     "isSending()Z",
     "isSendError()Z",
-    "getRegionAddress()I"
+    "getRegionAddress()I",
+    "write(Ljava/lang/String;)V",
+    "read()Ljava/lang/String;"
   };
 }
