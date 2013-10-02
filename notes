@@ -1,0 +1,1 @@
+java -classpath /home/michael/minijvm/lib/jtools.jar -Dtinyvm.home=/home/michael/minijvm -Dtinyvm.write.order=LE -Dtinyvm.loader=lejosrun -Dtinyvm.class.path="/home/michael/minijvm/lib/classes.jar:/home/michael/minijvm/lib/jtools.jar:./" js.tools.GenerateConstants
