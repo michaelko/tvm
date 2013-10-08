@@ -170,6 +170,42 @@ Object *new_object_for_class (const byte classIndex)
   return ref;
 }
 
+
+/**
+ * From leDos
+ * @param aValue Value for the string.
+ * @param btAddr Back-track PC address, in case
+ *               a static initializer needs to be invoked.
+ * @return A String instance, or JNULL if an exception was thrown
+ *         or the static initializer of String had to be executed.
+ */
+String *new_string_checked (char *aValue, byte *btAddr)
+{
+  Object *ref;
+  Object *arr;
+  TWOBYTES i;
+  int length = strlen(aValue);
+
+  ref = new_object_checked (JAVA_LANG_STRING, btAddr);
+  if (ref == JNULL)
+    return JNULL;
+  arr = new_primitive_array (T_CHAR, length);
+  if (arr == JNULL)
+  {
+    deallocate (obj2ptr(ref), class_size (JAVA_LANG_STRING));    
+    return JNULL;
+  }
+  
+  store_word ((byte *) &(((String *) ref)->characters), 4, obj2word(arr));
+  
+  for (i = 0; i < length; i++)
+  {
+	jchar_array(arr)[i] = (JCHAR)aValue[i];
+  }
+  return ref;
+}
+
+
 /**
  * Return the size in words of an array of the given type
  */

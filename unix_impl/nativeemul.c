@@ -363,7 +363,7 @@ void dispatch_native (TWOBYTES signature, STACKWORD *paramBase)
 	}
 	case read_4_5Ljava_3lang_3String_2:
 	{
-	  /*
+	  
 	  // TODO check for JNULL
 	  char* str = malloc(255);
 	  String *strObj;
@@ -372,7 +372,7 @@ void dispatch_native (TWOBYTES signature, STACKWORD *paramBase)
 	  strObj = new_string_checked (str, pc - 1);
 	  push_ref( ptr2ref(strObj) );
 	  free(str);
-	  */
+	  
 	  // fugg XXDD
       return;
 	}
