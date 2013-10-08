@@ -2,7 +2,8 @@
 VMSRC=../vmsrc
 LD=ld
 
-CC=$(shell ../cctest.sh)
+#CC=$(shell ../cctest.sh)
+CC=gcc -g
 
 # No -O2 option below because gcc 2.95.2 crashes!
 #CFLAGS=-I../vmsrc -I. -Wall -Wno-unused -DDEBUG_BYTECODE=1

@@ -11,7 +11,7 @@ public class Console {
     }
     
     public static void write(double d){
-    	Console.write(Double.toString(d));
+    	//Console.write(Double.toString(d));
     }
     
     public static void write(int i){
@@ -27,7 +27,7 @@ public class Console {
     }
     
     public static void writeln(double d){
-    	Console.write(Double.toString(d)+"\n");
+    	//Console.write(Double.toString(d)+"\n");
     }
     
     public static void writeln(int i){

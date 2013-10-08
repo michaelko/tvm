@@ -82,6 +82,8 @@ package java.lang;
   public static native float intBitsToFloat(int value);
   
   /**
+    * Currently a dummy function. Does not do anything usefull.
+    *
     * @author miko
     * @param  a float
     * @return a human readable representation of the float

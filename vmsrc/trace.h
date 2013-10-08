@@ -58,7 +58,7 @@ extern void assert_hook (boolean aCond, int aCode);
 
 #endif /* VERIFY */
 
-#if 0
+#if 1
 
 #define DEBUG_STARTUP     1
 #define DEBUG_MEMORY      1
