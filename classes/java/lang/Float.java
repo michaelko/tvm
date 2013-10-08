@@ -80,6 +80,21 @@ package java.lang;
      *          pattern.
      */
   public static native float intBitsToFloat(int value);
+  
+  /**
+    * @author miko
+    * @param  a float
+    * @return a human readable representation of the float
+    */
+  public static String toString(float f){
+    int bits=floatToIntBits(f);
+    int s = ((bits >> 31) == 0) ? 1 : -1;
+    int e = ((bits >> 23) & 0xff);
+    int m = (e == 0) ?
+                     (bits & 0x7fffff) << 1 :
+                     (bits & 0x7fffff) | 0x800000;
+    return (s==-1? "-" : "")+(Integer.toString(m))+"e"+(Integer.toString(e));
+  } 
 }
 
    
