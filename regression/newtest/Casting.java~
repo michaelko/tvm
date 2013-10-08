@@ -1,0 +1,61 @@
+// https://github.com/int3/doppio/blob/master/classes/test/Casting.java
+
+public class Casting {
+  public static void main(String[] args) {
+    {
+      int a = 999999;
+      Console.write(a);
+      Console.write((long)a);
+      Console.write((double)a);
+      Console.write((float)a);
+      Console.write((short)a);
+      Console.write((int)((char)a));
+      Console.write((byte)a);
+      a = -a;
+      Console.write(a);
+      Console.write((long)a);
+      Console.write((double)a);
+      Console.write((float)a);
+      Console.write((short)a);
+      Console.write((int)((char)a));
+      Console.write((byte)a);
+    }
+    {
+      long a = 8888888888888L;
+      Console.write(a);
+      Console.write((int)a);
+      Console.write((double)a);
+      Console.write((float)a);
+      a = -a;
+      Console.write(a);
+      Console.write((int)a);
+      Console.write((double)a);
+      Console.write((float)a);
+    }
+    {
+      double a = 777777777777.0;
+      Console.write(a);
+      Console.write((long)a);
+      Console.write((int)a);
+      Console.write((float)a);
+      a = -a;
+      Console.write(a);
+      Console.write((long)a);
+      Console.write((int)a);
+      Console.write((float)a);
+    }
+    {
+      float a = 6666666.0f;
+      Console.write(a);
+      Console.write((long)a);
+      Console.write((double)a);
+      Console.write((int)a);
+      a = -a;
+      Console.write(a);
+      Console.write((long)a);
+      Console.write((double)a);
+      Console.write((int)a);
+    }
+  }
+
+}

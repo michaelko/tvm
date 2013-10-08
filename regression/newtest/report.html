@@ -1,0 +1,378 @@
+<html>
+
+<head>
+<style>
+div{
+margin: 3px;
+border-style:solid;
+border-left-width:5pt;
+border-bottom-width:2pt;
+border-top-width:0pt;
+border-right-width:0pt;
+padding: 2px;
+padding-left: 15pt;
+font-family: Sans-Serif;
+}
+div.pass{
+background-color:#daffb3;
+border-color: #65c400;
+}
+
+div.fail{
+background-color:#feeac3;
+border-color: #c20000;
+}
+
+div.source{
+background-color:#333;
+border-color: #000;
+font-family: monospace;
+color: #eee;
+}
+</style>
+</head>
+<body>
+
+<div class=pass> Test1: Pass </div>
+    <div class="fail"> ArrayOps: Fail
+
+<br/>
+Source:
+<div class="source">
+<html>
+<head>
+  <title>ArrayOps.java</title>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<pre>
+<a name="line1"> 1</a> <font color="#444444">// https://github.com/int3/doppio/blob/master/classes/test/ArrayOps.java</font>
+<a name="line2"> 2</a> 
+<a name="line3"> 3</a> <strong>public</strong> <strong>class</strong> <font color="#2040a0">ArrayOps</font> <font color="4444FF"><strong>{</strong></font>
+<a name="line4"> 4</a>   <strong>short</strong><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">foo3</font><font color="4444FF">;</font>
+<a name="line5"> 5</a>   <strong>public</strong> <font color="#2040a0">ArrayOps</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>{</strong></font>
+<a name="line6"> 6</a>     <font color="#2040a0">foo3</font> <font color="4444FF">=</font> <strong>new</strong> <strong>short</strong><font color="4444FF"><strong>[</strong></font><font color="#FF0000">3</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">2</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line7"> 7</a>   <font color="4444FF"><strong>}</strong></font>
+<a name="line8"> 8</a>   <strong>public</strong> <strong>static</strong> <strong>void</strong> <font color="#2040a0">main</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">String</font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">args</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line9"> 9</a>     <strong>int</strong><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">foo</font> <font color="4444FF">=</font> <font color="4444FF"><strong>{</strong></font><font color="#FF0000">5</font>,<font color="#FF0000">4</font>,<font color="#FF0000">3</font>,<font color="#FF0000">2</font>,<font color="#FF0000">1</font><font color="4444FF"><strong>}</strong></font><font color="4444FF">;</font>
+<a name="line10">10</a>     <strong>int</strong> <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="#2040a0">foo</font>.<font color="#2040a0">length</font><font color="4444FF">;</font>
+<a name="line11">11</a>     <strong>int</strong><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">bar</font> <font color="4444FF">=</font> <strong>new</strong> <strong>int</strong><font color="4444FF"><strong>[</strong></font><font color="#FF0000">5</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line12">12</a>     <font color="#2040a0">System</font>.<font color="#2040a0">arraycopy</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">foo</font>,<font color="#FF0000">0</font>,<font color="#2040a0">bar</font>,<font color="#FF0000">0</font>,<font color="#FF0000">5</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line13">13</a>     <font color="#2040a0">foo</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">2</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">=</font> <font color="#FF0000">30</font><font color="4444FF">;</font>
+<a name="line14">14</a>     <strong>int</strong> <font color="#2040a0">c</font> <font color="4444FF">=</font> <font color="#2040a0">bar</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">2</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line15">15</a>     <strong>for</strong> <font color="4444FF"><strong>(</strong></font><strong>int</strong> <font color="#2040a0">i</font> <font color="4444FF">=</font> <font color="#FF0000">0</font><font color="4444FF">;</font> <font color="#2040a0">i</font> <font color="4444FF">&lt;</font> <font color="#2040a0">foo</font>.<font color="#2040a0">length</font><font color="4444FF">;</font> <font color="#2040a0">i</font><font color="4444FF">+</font><font color="4444FF">+</font><font color="4444FF"><strong>)</strong></font>
+<a name="line16">16</a>         <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">println</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">foo</font><font color="4444FF"><strong>[</strong></font><font color="#2040a0">i</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line17">17</a>     <strong>for</strong> <font color="4444FF"><strong>(</strong></font><strong>int</strong> <font color="#2040a0">i</font> <font color="4444FF">=</font> <font color="#FF0000">0</font><font color="4444FF">;</font> <font color="#2040a0">i</font> <font color="4444FF">&lt;</font> <font color="#2040a0">bar</font>.<font color="#2040a0">length</font><font color="4444FF">;</font> <font color="#2040a0">i</font><font color="4444FF">+</font><font color="4444FF">+</font><font color="4444FF"><strong>)</strong></font>
+<a name="line18">18</a>         <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">println</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">bar</font><font color="4444FF"><strong>[</strong></font><font color="#2040a0">i</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line19">19</a> 
+<a name="line20">20</a>     <font color="#444444">// multidimensional array (multianewarray)</font>
+<a name="line21">21</a>     <font color="#2040a0">Integer</font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">foo2</font> <font color="4444FF">=</font> <strong>new</strong> <font color="#2040a0">Integer</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">5</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">5</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line22">22</a>     <font color="#2040a0">ArrayOps</font> <font color="#2040a0">ao</font> <font color="4444FF">=</font> <strong>new</strong> <font color="#2040a0">ArrayOps</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line23">23</a> 
+<a name="line24">24</a>     <strong>for</strong> <font color="4444FF"><strong>(</strong></font><strong>int</strong> <font color="#2040a0">i</font> <font color="4444FF">=</font> <font color="#FF0000">0</font><font color="4444FF">;</font> <font color="#2040a0">i</font> <font color="4444FF">&lt;</font> <font color="#2040a0">foo2</font>.<font color="#2040a0">length</font><font color="4444FF">;</font> <font color="#2040a0">i</font><font color="4444FF">+</font><font color="4444FF">+</font><font color="4444FF"><strong>)</strong></font>  <font color="4444FF"><strong>{</strong></font>
+<a name="line25">25</a>       <strong>for</strong> <font color="4444FF"><strong>(</strong></font><strong>int</strong> <font color="#2040a0">j</font> <font color="4444FF">=</font> <font color="#FF0000">0</font><font color="4444FF">;</font> <font color="#2040a0">j</font> <font color="4444FF">&lt;</font> <font color="#2040a0">foo2</font><font color="4444FF"><strong>[</strong></font><font color="#2040a0">i</font><font color="4444FF"><strong>]</strong></font>.<font color="#2040a0">length</font><font color="4444FF">;</font> <font color="#2040a0">j</font><font color="4444FF">+</font><font color="4444FF">+</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line26">26</a>         <font color="#2040a0">foo2</font><font color="4444FF"><strong>[</strong></font><font color="#2040a0">i</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>[</strong></font><font color="#2040a0">j</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">=</font> <font color="#2040a0">i</font> <font color="4444FF">*</font> <font color="#2040a0">j</font><font color="4444FF">;</font>
+<a name="line27">27</a>         <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">print</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">foo2</font><font color="4444FF"><strong>[</strong></font><font color="#2040a0">i</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>[</strong></font><font color="#2040a0">j</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line28">28</a>       <font color="4444FF"><strong>}</strong></font>
+<a name="line29">29</a>       <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">println</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line30">30</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line31">31</a> 
+<a name="line32">32</a>     <font color="#444444">// create arrays of unfilled arrays with nulls</font>
+<a name="line33">33</a>     <font color="#2040a0">Object</font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">arrarr</font> <font color="4444FF">=</font> <strong>new</strong> <font color="#2040a0">Object</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">1</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line34">34</a>     <strong>if</strong> <font color="4444FF"><strong>(</strong></font><font color="#2040a0">arrarr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">0</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">!</font><font color="4444FF">=</font> <strong>null</strong><font color="4444FF"><strong>)</strong></font>
+<a name="line35">35</a>       <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">println</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">arrarr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">0</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line36">36</a> 
+<a name="line37">37</a>     <font color="#444444">// all kinds of array loads</font>
+<a name="line38">38</a>     <strong>long</strong><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">larr</font> <font color="4444FF">=</font> <strong>new</strong> <strong>long</strong><font color="4444FF"><strong>[</strong></font><font color="#FF0000">3</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line39">39</a>     <strong>short</strong><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">sarr</font> <font color="4444FF">=</font> <strong>new</strong> <strong>short</strong><font color="4444FF"><strong>[</strong></font><font color="#FF0000">4</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line40">40</a>     <strong>byte</strong><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">barr</font> <font color="4444FF">=</font> <strong>new</strong> <strong>byte</strong><font color="4444FF"><strong>[</strong></font><font color="#FF0000">5</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line41">41</a>     <strong>float</strong><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">farr</font> <font color="4444FF">=</font> <strong>new</strong> <strong>float</strong><font color="4444FF"><strong>[</strong></font><font color="#FF0000">6</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line42">42</a>     <strong>double</strong><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">darr</font> <font color="4444FF">=</font> <strong>new</strong> <strong>double</strong><font color="4444FF"><strong>[</strong></font><font color="#FF0000">7</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line43">43</a>     <font color="#2040a0">darr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">6</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">=</font> <font color="#FF0000">8.3</font><font color="4444FF">;</font>
+<a name="line44">44</a>     <font color="#2040a0">farr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">5</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">=</font> <font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">darr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">6</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line45">45</a>     <font color="#2040a0">barr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">4</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">=</font> <font color="4444FF"><strong>(</strong></font><strong>byte</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">farr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">5</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line46">46</a>     <font color="#2040a0">sarr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">3</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">=</font> <font color="4444FF"><strong>(</strong></font><strong>short</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">barr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">4</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line47">47</a>     <font color="#2040a0">larr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">2</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">=</font> <font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">sarr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">3</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line48">48</a>     <font color="#2040a0">darr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">1</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">=</font> <font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">larr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">2</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line49">49</a>     <font color="#444444">// check that we initialized our long array with gLong objects</font>
+<a name="line50">50</a>     <font color="#2040a0">larr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">0</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">=</font> <font color="#FF0000">2</font> <font color="4444FF">+</font> <font color="#2040a0">larr</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">1</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line51">51</a> 
+<a name="line52">52</a>     <font color="#444444">// null checks</font>
+<a name="line53">53</a>     <strong>int</strong><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">baz</font> <font color="4444FF">=</font> <strong>null</strong><font color="4444FF">;</font>
+<a name="line54">54</a> 
+<a name="line55">55</a>     <strong>try</strong> <font color="4444FF"><strong>{</strong></font>
+<a name="line56">56</a>       <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">println</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">baz</font>.<font color="#2040a0">length</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line57">57</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line58">58</a>     <strong>catch</strong> <font color="4444FF"><strong>(</strong></font><font color="#2040a0">NullPointerException</font> <font color="#2040a0">e</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line59">59</a>       <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">println</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;Caught field lookup on null&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line60">60</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line61">61</a> 
+<a name="line62">62</a>     <font color="#2040a0">baz</font> <font color="4444FF">=</font> <strong>new</strong> <strong>int</strong><font color="4444FF"><strong>[</strong></font><font color="#FF0000">0</font><font color="4444FF"><strong>]</strong></font><font color="4444FF">;</font>
+<a name="line63">63</a> 
+<a name="line64">64</a>     <strong>try</strong> <font color="4444FF"><strong>{</strong></font>
+<a name="line65">65</a>       <font color="#2040a0">baz</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">0</font><font color="4444FF"><strong>]</strong></font> <font color="4444FF">=</font> <font color="#FF0000">0</font><font color="4444FF">;</font>
+<a name="line66">66</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line67">67</a>     <strong>catch</strong> <font color="4444FF"><strong>(</strong></font><font color="#2040a0">ArrayIndexOutOfBoundsException</font> <font color="#2040a0">e</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line68">68</a>       <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">println</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;Caught iastore out of bounds&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line69">69</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line70">70</a> 
+<a name="line71">71</a>     <strong>try</strong> <font color="4444FF"><strong>{</strong></font>
+<a name="line72">72</a>       <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">println</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">baz</font><font color="4444FF"><strong>[</strong></font><font color="#FF0000">0</font><font color="4444FF"><strong>]</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line73">73</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line74">74</a>     <strong>catch</strong> <font color="4444FF"><strong>(</strong></font><font color="#2040a0">ArrayIndexOutOfBoundsException</font> <font color="#2040a0">e</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line75">75</a>       <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">println</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;Caught iaload out of bounds&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line76">76</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line77">77</a> 
+<a name="line78">78</a>     <font color="#2040a0">System</font>.<font color="#2040a0">out</font>.<font color="#2040a0">println</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;OK&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line79">79</a>   <font color="4444FF"><strong>}</strong></font>
+<a name="line80">80</a> <font color="4444FF"><strong>}</strong></font>
+
+</pre>
+<hr>
+syntax highlighted by <a href="http://www.palfrader.org/code2html">Code2HTML</a>, v. 0.9.1
+</body>
+</html>
+</div>
+Input:
+<div class="source">
+</div>
+
+Compiler output:
+<div class="source">
+ArrayOps.java:12: arraycopy(char[],int,char[],int,int) in java.lang.System cannot be applied to (int[],int,int[],int,int)
+    System.arraycopy(foo,0,bar,0,5);
+          ^
+ArrayOps.java:16: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+        System.out.println(foo[i]);
+              ^
+ArrayOps.java:18: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+        System.out.println(bar[i]);
+              ^
+ArrayOps.java:26: incompatible types
+found   : int
+required: java.lang.Integer
+        foo2[i][j] = i * j;
+                       ^
+ArrayOps.java:27: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+        System.out.print(foo2[i][j]);
+              ^
+ArrayOps.java:29: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+      System.out.println();
+            ^
+ArrayOps.java:35: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+      System.out.println(arrarr[0]);
+            ^
+ArrayOps.java:56: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+      System.out.println(baz.length);
+            ^
+ArrayOps.java:59: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+      System.out.println("Caught field lookup on null");
+            ^
+ArrayOps.java:68: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+      System.out.println("Caught iastore out of bounds");
+            ^
+ArrayOps.java:72: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+      System.out.println(baz[0]);
+            ^
+ArrayOps.java:75: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+      System.out.println("Caught iaload out of bounds");
+            ^
+ArrayOps.java:78: cannot find symbol
+symbol  : variable out
+location: class java.lang.System
+    System.out.println("OK");
+          ^
+13 errors
+</div>
+
+JVM output:
+<div class="source">
+Exception in thread "main" java.lang.NoClassDefFoundError: ArrayOps
+Caused by: java.lang.ClassNotFoundException: ArrayOps
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:217)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:205)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:321)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:294)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:266)
+Could not find the main class: ArrayOps. Program will exit.
+</div>
+TVM output:
+<div class="source">
+Unable to open ArrayOps.tvm
+</div>
+</div>
+    <div class="fail"> Casting: Fail
+
+<br/>
+Source:
+<div class="source">
+<html>
+<head>
+  <title>Casting.java</title>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<pre>
+<a name="line1"> 1</a> <font color="#444444">// https://github.com/int3/doppio/blob/master/classes/test/Casting.java</font>
+<a name="line2"> 2</a> 
+<a name="line3"> 3</a> <strong>public</strong> <strong>class</strong> <font color="#2040a0">Casting</font> <font color="4444FF"><strong>{</strong></font>
+<a name="line4"> 4</a>   <strong>public</strong> <strong>static</strong> <strong>void</strong> <font color="#2040a0">main</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">String</font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">args</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line5"> 5</a>     <font color="4444FF"><strong>{</strong></font>
+<a name="line6"> 6</a>       <strong>int</strong> <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="#FF0000">999999</font><font color="4444FF">;</font>
+<a name="line7"> 7</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line8"> 8</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line9"> 9</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line10">10</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line11">11</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>short</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line12">12</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>char</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line13">13</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>byte</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line14">14</a>       <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="4444FF">-</font><font color="#2040a0">a</font><font color="4444FF">;</font>
+<a name="line15">15</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line16">16</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line17">17</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line18">18</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line19">19</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>short</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line20">20</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>char</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line21">21</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>byte</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line22">22</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line23">23</a>     <font color="4444FF"><strong>{</strong></font>
+<a name="line24">24</a>       <strong>long</strong> <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="#FF0000">8888888888888L</font><font color="4444FF">;</font>
+<a name="line25">25</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line26">26</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line27">27</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line28">28</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line29">29</a>       <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="4444FF">-</font><font color="#2040a0">a</font><font color="4444FF">;</font>
+<a name="line30">30</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line31">31</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line32">32</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line33">33</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line34">34</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line35">35</a>     <font color="4444FF"><strong>{</strong></font>
+<a name="line36">36</a>       <strong>double</strong> <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="#FF0000">777777777777.0</font><font color="4444FF">;</font>
+<a name="line37">37</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line38">38</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line39">39</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line40">40</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line41">41</a>       <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="4444FF">-</font><font color="#2040a0">a</font><font color="4444FF">;</font>
+<a name="line42">42</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line43">43</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line44">44</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line45">45</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line46">46</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line47">47</a>     <font color="4444FF"><strong>{</strong></font>
+<a name="line48">48</a>       <strong>float</strong> <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="#FF0000">6666666.0f</font><font color="4444FF">;</font>
+<a name="line49">49</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line50">50</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line51">51</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line52">52</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line53">53</a>       <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="4444FF">-</font><font color="#2040a0">a</font><font color="4444FF">;</font>
+<a name="line54">54</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line55">55</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line56">56</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line57">57</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line58">58</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line59">59</a>   <font color="4444FF"><strong>}</strong></font>
+<a name="line60">60</a> 
+<a name="line61">61</a> <font color="4444FF"><strong>}</strong></font>
+
+</pre>
+<hr>
+syntax highlighted by <a href="http://www.palfrader.org/code2html">Code2HTML</a>, v. 0.9.1
+</body>
+</html>
+</div>
+Input:
+<div class="source">
+</div>
+
+Compiler output:
+<div class="source">
+./Console.java:10: toString() in java.lang.Object cannot be applied to (float)
+    	Console.write(Float.toString(f));
+    	                   ^
+./Console.java:14: cannot find symbol
+symbol  : variable Double
+location: class Console
+    	Console.write(Double.toString(d));
+    	              ^
+./Console.java:26: toString() in java.lang.Object cannot be applied to (float)
+    	Console.write(Float.toString(f)+"\n");
+    	                   ^
+./Console.java:30: cannot find symbol
+symbol  : variable Double
+location: class Console
+    	Console.write(Double.toString(d)+"\n");
+    	              ^
+4 errors
+</div>
+
+JVM output:
+<div class="source">
+999999
+999999.0
+999999.0
+999999.0
+16959
+16959
+63
+-999999
+-999999.0
+-999999.0
+-999999.0
+-16959
+48577
+-63
+8.8888889E12
+-1693413832
+8.888888888888E12
+8.8888889E12
+-8.8888889E12
+1693413832
+-8.888888888888E12
+-8.8888889E12
+7.77777777777E11
+7.7777777E11
+2147483647
+7.7777777E11
+-7.77777777777E11
+-7.7777777E11
+-2147483648
+-7.7777777E11
+6666666.0
+6666666.0
+6666666.0
+6666666
+-6666666.0
+-6666666.0
+-6666666.0
+-6666666
+</div>
+TVM output:
+<div class="source">
+Unable to open Casting.tvm
+</div>
+</div>
+
+</div>
+</body>
+</html>
+
