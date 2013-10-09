@@ -1,0 +1,1426 @@
+<html>
+
+<head>
+<style>
+div{
+margin: 3px;
+border-style:solid;
+border-left-width:5pt;
+border-bottom-width:2pt;
+border-top-width:0pt;
+border-right-width:0pt;
+padding: 2px;
+padding-left: 15pt;
+font-family: Sans-Serif;
+}
+div.pass{
+background-color:#daffb3;
+border-color: #65c400;
+}
+
+div.fail{
+background-color:#feeac3;
+border-color: #c20000;
+}
+
+div.source{
+background-color:#333;
+border-color: #000;
+font-family: monospace;
+color: #eee;
+}
+</style>
+</head>
+<body>
+
+    <div class="fail"> Hello: Fail
+
+<br/>
+Source:
+<div class="source">
+<html>
+<head>
+  <title>Hello.java</title>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<pre>
+<a name="line1">1</a> <font color="#444444"><i>/**
+<a name="line2">2</a> * @author Miko
+<a name="line3">3</a> */</i></font>
+<a name="line4">4</a> 
+<a name="line5">5</a> <strong>public</strong> <strong>class</strong> <font color="#2040a0">Hello</font> <font color="4444FF"><strong>{</strong></font>
+<a name="line6">6</a>     <strong>public</strong> <strong>static</strong> <strong>void</strong> <font color="#2040a0">main</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">String</font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">aArg</font><font color="4444FF"><strong>)</strong></font> <strong>throws</strong> <font color="#2040a0">Exception</font> <font color="4444FF"><strong>{</strong></font>
+<a name="line7">7</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">write</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;Hello World!&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line8">8</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line9">9</a> <font color="4444FF"><strong>}</strong></font>
+
+</pre>
+<hr>
+syntax highlighted by <a href="http://www.palfrader.org/code2html">Code2HTML</a>, v. 0.9.1
+</body>
+</html>
+</div>
+
+
+Compiler output:
+<div class="source">
+<pre>
+</pre>
+</div>
+
+JVM output:
+<div class="source">
+<pre>
+Hello World!
+</pre>
+</div>
+TVM output:
+<div class="source">
+<pre>
+Reading binary Hello.tvm
+Installing binary 15740944
+Checking validity of magic number
+New object for class 5
+Allocate 2 - free 8186
+new_object_for_class: returning 15761212
+New object for class 6
+Allocate 2 - free 8184
+new_object_for_class: returning 15761208
+New object for class 7
+Allocate 2 - free 8182
+new_object_for_class: returning 15761204
+New object for class 8
+Allocate 2 - free 8180
+new_object_for_class: returning 15761200
+New object for class 9
+Allocate 2 - free 8178
+new_object_for_class: returning 15761196
+New object for class 10
+Allocate 2 - free 8176
+new_object_for_class: returning 15761192
+New object for class 11
+Allocate 2 - free 8174
+new_object_for_class: returning 15761188
+New object for class 12
+Allocate 2 - free 8172
+new_object_for_class: returning 15761184
+New object for class 13
+Allocate 2 - free 8170
+new_object_for_class: returning 15761180
+New object for class 14
+Allocate 2 - free 8168
+new_object_for_class: returning 15761176
+New object for class 15
+Allocate 2 - free 8166
+new_object_for_class: returning 15761172
+New object for class 4
+Allocate 2 - free 8164
+new_object_for_class: returning 15761168
+New object for class 1
+Allocate 18 - free 8146
+new_object_for_class: returning 15761132
+Created bootThread: 15761132. Initializing...
+Setting intial priority to 5
+New array of type 1, length 4
+Allocate 82 - free 8064
+Array ptr=15760968
+New array of type 10, length 10
+Allocate 22 - free 8042
+Array ptr=15760924
+Engine starting.
+switching thread: 140
+------ switch_thread: currentThread at 15761132
+switchThread: current stack frame: 0
+Checking state of thread 15761132(1)(s=2,p=5,i=-128,d=0)
+Starting thread 15761132: 1
+
+------ dispatch special - 0 ------------------
+
+dispatch_special: 15741924, 0
+-- signature id = 0
+-- code offset  = 1695
+-- flags        = 4
+-- num params   = 1
+-- stack ptr    = 15760928
+-- max stack ptr= 15760968
+pc set to 0xF036AF
+Found a non-daemon thread 15761132: 1(3)
+switch_thread: done processing thread 15761132: 1
+currentThread=15761132, ndr=1
+Leaving switch_thread()
+Current thread is 15761132: 1(3)
+getting current stack frame...
+updating registers...
+done updating registers
+done switching thread
+0xF036AF: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 8038
+new_object_for_class: returning 15760916
+New array of type 5, length 12
+Allocate 14 - free 8024
+Array ptr=15760888
+0xF036B1: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 15742644, 15742641
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 15742020, 15742644
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 15760936
+-- max stack ptr= 15760928
+-- native
+Hello World!0xF036B4: 
+OPCODE (0xB1) return
+
+------ return ----- 0 ------------------
+
+do_return: method: 0  #  num. words: 0
+do_return: stack frame array size: 1
+do_return: thread is done: 15761132
+switching thread: 140
+------ switch_thread: currentThread at 15761132
+Tidying up DEAD thread 15761132: 1
+Deallocate 2 at 15760924 - free 8026
+Deallocate 82 at 15760968 - free 8108
+Previous thread 15761132
+Previous thread 15761132
+No more threads of priority 5
+currentThread=0, ndr=0
+Leaving switch_thread()
+done switching thread
+Engine finished.
+</pre>
+</div>
+</div>
+</div>
+    <div class="fail"> Casting: Fail
+
+<br/>
+Source:
+<div class="source">
+<html>
+<head>
+  <title>Casting.java</title>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<pre>
+<a name="line1"> 1</a> <font color="#444444">// https://github.com/int3/doppio/blob/master/classes/test/Casting.java</font>
+<a name="line2"> 2</a> 
+<a name="line3"> 3</a> <strong>public</strong> <strong>class</strong> <font color="#2040a0">Casting</font> <font color="4444FF"><strong>{</strong></font>
+<a name="line4"> 4</a>   <strong>public</strong> <strong>static</strong> <strong>void</strong> <font color="#2040a0">main</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">String</font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">args</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line5"> 5</a>     <font color="4444FF"><strong>{</strong></font>
+<a name="line6"> 6</a>       <strong>int</strong> <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="#FF0000">999999</font><font color="4444FF">;</font>
+<a name="line7"> 7</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line8"> 8</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line9"> 9</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line10">10</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line11">11</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>short</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line12">12</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>char</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line13">13</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>byte</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line14">14</a>       <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="4444FF">-</font><font color="#2040a0">a</font><font color="4444FF">;</font>
+<a name="line15">15</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line16">16</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line17">17</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line18">18</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line19">19</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>short</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line20">20</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>char</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line21">21</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>byte</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line22">22</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line23">23</a>     <font color="4444FF"><strong>{</strong></font>
+<a name="line24">24</a>       <strong>long</strong> <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="#FF0000">8888888888888L</font><font color="4444FF">;</font>
+<a name="line25">25</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line26">26</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line27">27</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line28">28</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line29">29</a>       <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="4444FF">-</font><font color="#2040a0">a</font><font color="4444FF">;</font>
+<a name="line30">30</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line31">31</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line32">32</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line33">33</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line34">34</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line35">35</a>     <font color="4444FF"><strong>{</strong></font>
+<a name="line36">36</a>       <strong>double</strong> <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="#FF0000">777777777777.0</font><font color="4444FF">;</font>
+<a name="line37">37</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line38">38</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line39">39</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line40">40</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line41">41</a>       <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="4444FF">-</font><font color="#2040a0">a</font><font color="4444FF">;</font>
+<a name="line42">42</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line43">43</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line44">44</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line45">45</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>float</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line46">46</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line47">47</a>     <font color="4444FF"><strong>{</strong></font>
+<a name="line48">48</a>       <strong>float</strong> <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="#FF0000">6666666.0f</font><font color="4444FF">;</font>
+<a name="line49">49</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line50">50</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line51">51</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line52">52</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line53">53</a>       <font color="#2040a0">a</font> <font color="4444FF">=</font> <font color="4444FF">-</font><font color="#2040a0">a</font><font color="4444FF">;</font>
+<a name="line54">54</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line55">55</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>long</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line56">56</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>double</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line57">57</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>(</strong></font><strong>int</strong><font color="4444FF"><strong>)</strong></font><font color="#2040a0">a</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line58">58</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line59">59</a>   <font color="4444FF"><strong>}</strong></font>
+<a name="line60">60</a> 
+<a name="line61">61</a> <font color="4444FF"><strong>}</strong></font>
+
+</pre>
+<hr>
+syntax highlighted by <a href="http://www.palfrader.org/code2html">Code2HTML</a>, v. 0.9.1
+</body>
+</html>
+</div>
+
+
+Compiler output:
+<div class="source">
+<pre>
+</pre>
+</div>
+
+JVM output:
+<div class="source">
+<pre>
+999999
+999999.0
+999999.0
+999999.0
+16959
+16959
+63
+-999999
+-999999.0
+-999999.0
+-999999.0
+-16959
+48577
+-63
+8.8888889E12
+-1693413832
+8.888888888888E12
+8.8888889E12
+-8.8888889E12
+1693413832
+-8.888888888888E12
+-8.8888889E12
+7.77777777777E11
+7.7777777E11
+2147483647
+7.7777777E11
+-7.77777777777E11
+-7.7777777E11
+-2147483648
+-7.7777777E11
+6666666.0
+6666666.0
+6666666.0
+6666666
+-6666666.0
+-6666666.0
+-6666666.0
+-6666666
+</pre>
+</div>
+TVM output:
+<div class="source">
+<pre>
+Fatal: Unsupported lneg in Casting:main.
+The following features/conditions are currently unsupported::
+- Switch statements.
+- Integer increment constant too large. (If > 255, declare it).
+- Arithmetic or logical operations on variables of type long.
+- Remainder operations on floats or doubles.
+- Too many constants or locals ( > 255).
+- Method code too long ( > 64 Kb!).
+
+Reading binary Casting.tvm
+Unable to open Casting.tvm
+</pre>
+</div>
+</div>
+</div>
+    <div class="fail"> Loops: Fail
+
+<br/>
+Source:
+<div class="source">
+<html>
+<head>
+  <title>Loops.java</title>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<pre>
+<a name="line1">1</a> <strong>class</strong> <font color="#2040a0">Loops</font><font color="4444FF"><strong>{</strong></font>
+<a name="line2">2</a>   <strong>public</strong> <strong>static</strong> <strong>void</strong> <font color="#2040a0">main</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">String</font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">args</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line3">3</a>     <strong>int</strong> <font color="#2040a0">i</font><font color="4444FF">;</font>
+<a name="line4">4</a>     <strong>for</strong><font color="4444FF"><strong>(</strong></font><font color="#2040a0">i</font><font color="4444FF">=</font><font color="#FF0000">0</font><font color="4444FF">;</font><font color="#2040a0">i</font><font color="4444FF">&lt;</font><font color="#FF0000">10</font><font color="4444FF">;</font><font color="#2040a0">i</font><font color="4444FF">+</font><font color="4444FF">+</font><font color="4444FF"><strong>)</strong></font>
+<a name="line5">5</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">write</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;a&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line6">6</a>     <strong>for</strong><font color="4444FF"><strong>(</strong></font><font color="#2040a0">i</font><font color="4444FF">=</font><font color="#FF0000">0</font><font color="4444FF">;</font><font color="#2040a0">i</font><font color="4444FF">&lt;</font><font color="#FF0000">10</font><font color="4444FF">;</font><font color="#2040a0">i</font><font color="4444FF">+</font><font color="4444FF">+</font><font color="4444FF"><strong>)</strong></font>
+<a name="line7">7</a>       <font color="#2040a0">Console</font>.<font color="#2040a0">write</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">i</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line8">8</a>   <font color="4444FF"><strong>}</strong></font>
+<a name="line9">9</a> <font color="4444FF"><strong>}</strong></font>
+
+</pre>
+<hr>
+syntax highlighted by <a href="http://www.palfrader.org/code2html">Code2HTML</a>, v. 0.9.1
+</body>
+</html>
+</div>
+
+
+Compiler output:
+<div class="source">
+<pre>
+</pre>
+</div>
+
+JVM output:
+<div class="source">
+<pre>
+aaaaaaaaaa0123456789
+</pre>
+</div>
+TVM output:
+<div class="source">
+<pre>
+Reading binary Loops.tvm
+Installing binary 8405008
+Checking validity of magic number
+New object for class 5
+Allocate 2 - free 8186
+new_object_for_class: returning 8425324
+New object for class 6
+Allocate 2 - free 8184
+new_object_for_class: returning 8425320
+New object for class 7
+Allocate 2 - free 8182
+new_object_for_class: returning 8425316
+New object for class 8
+Allocate 2 - free 8180
+new_object_for_class: returning 8425312
+New object for class 9
+Allocate 2 - free 8178
+new_object_for_class: returning 8425308
+New object for class 10
+Allocate 2 - free 8176
+new_object_for_class: returning 8425304
+New object for class 11
+Allocate 2 - free 8174
+new_object_for_class: returning 8425300
+New object for class 12
+Allocate 2 - free 8172
+new_object_for_class: returning 8425296
+New object for class 13
+Allocate 2 - free 8170
+new_object_for_class: returning 8425292
+New object for class 14
+Allocate 2 - free 8168
+new_object_for_class: returning 8425288
+New object for class 15
+Allocate 2 - free 8166
+new_object_for_class: returning 8425284
+New object for class 4
+Allocate 2 - free 8164
+new_object_for_class: returning 8425280
+New object for class 1
+Allocate 18 - free 8146
+new_object_for_class: returning 8425244
+Created bootThread: 8425244. Initializing...
+Setting intial priority to 5
+New array of type 1, length 4
+Allocate 82 - free 8064
+Array ptr=8425080
+New array of type 10, length 10
+Allocate 22 - free 8042
+Array ptr=8425036
+Engine starting.
+switching thread: 140
+------ switch_thread: currentThread at 8425244
+switchThread: current stack frame: 0
+Checking state of thread 8425244(1)(s=2,p=5,i=-128,d=0)
+Starting thread 8425244: 1
+
+------ dispatch special - 0 ------------------
+
+dispatch_special: 8405988, 0
+-- signature id = 0
+-- code offset  = 1707
+-- flags        = 4
+-- num params   = 1
+-- stack ptr    = 8425040
+-- max stack ptr= 8425080
+pc set to 0x8046BB
+Found a non-daemon thread 8425244: 1(3)
+switch_thread: done processing thread 8425244: 1
+currentThread=8425244, ndr=1
+Leaving switch_thread()
+Current thread is 8425244: 1(3)
+getting current stack frame...
+updating registers...
+done updating registers
+done switching thread
+0x8046BB: 
+OPCODE (0x3) iconst_0
+0x8046BC: 
+OPCODE (0x3C) istore_1
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046C3: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 8038
+new_object_for_class: returning 8425028
+New array of type 5, length 1
+Allocate 3 - free 8035
+Array ptr=8425022
+0x8046C5: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 8406728, 8406725
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 8406084, 8406728
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- native
+a0x8046C8: 
+OPCODE (0x84) iinc
+0x8046CB: 
+OPCODE (0xA7) goto
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046C3: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 8031
+new_object_for_class: returning 8425014
+New array of type 5, length 1
+Allocate 3 - free 8028
+Array ptr=8425008
+0x8046C5: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 8406728, 8406725
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 8406084, 8406728
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- native
+a0x8046C8: 
+OPCODE (0x84) iinc
+0x8046CB: 
+OPCODE (0xA7) goto
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046C3: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 8024
+new_object_for_class: returning 8425000
+New array of type 5, length 1
+Allocate 3 - free 8021
+Array ptr=8424994
+0x8046C5: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 8406728, 8406725
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 8406084, 8406728
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- native
+a0x8046C8: 
+OPCODE (0x84) iinc
+0x8046CB: 
+OPCODE (0xA7) goto
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046C3: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 8017
+new_object_for_class: returning 8424986
+New array of type 5, length 1
+Allocate 3 - free 8014
+Array ptr=8424980
+0x8046C5: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 8406728, 8406725
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 8406084, 8406728
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- native
+a0x8046C8: 
+OPCODE (0x84) iinc
+0x8046CB: 
+OPCODE (0xA7) goto
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046C3: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 8010
+new_object_for_class: returning 8424972
+New array of type 5, length 1
+Allocate 3 - free 8007
+Array ptr=8424966
+0x8046C5: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 8406728, 8406725
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 8406084, 8406728
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- native
+a0x8046C8: 
+OPCODE (0x84) iinc
+0x8046CB: 
+OPCODE (0xA7) goto
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046C3: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 8003
+new_object_for_class: returning 8424958
+New array of type 5, length 1
+Allocate 3 - free 8000
+Array ptr=8424952
+0x8046C5: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 8406728, 8406725
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 8406084, 8406728
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- native
+a0x8046C8: 
+OPCODE (0x84) iinc
+0x8046CB: 
+OPCODE (0xA7) goto
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046C3: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 7996
+new_object_for_class: returning 8424944
+New array of type 5, length 1
+Allocate 3 - free 7993
+Array ptr=8424938
+0x8046C5: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 8406728, 8406725
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 8406084, 8406728
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- native
+a0x8046C8: 
+OPCODE (0x84) iinc
+0x8046CB: 
+OPCODE (0xA7) goto
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046C3: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 7989
+new_object_for_class: returning 8424930
+New array of type 5, length 1
+Allocate 3 - free 7986
+Array ptr=8424924
+0x8046C5: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 8406728, 8406725
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 8406084, 8406728
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- native
+a0x8046C8: 
+OPCODE (0x84) iinc
+0x8046CB: 
+OPCODE (0xA7) goto
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046C3: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 7982
+new_object_for_class: returning 8424916
+New array of type 5, length 1
+Allocate 3 - free 7979
+Array ptr=8424910
+0x8046C5: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 8406728, 8406725
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 8406084, 8406728
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- native
+a0x8046C8: 
+OPCODE (0x84) iinc
+0x8046CB: 
+OPCODE (0xA7) goto
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046C3: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 7975
+new_object_for_class: returning 8424902
+New array of type 5, length 1
+Allocate 3 - free 7972
+Array ptr=8424896
+0x8046C5: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 1, 8406728, 8406725
+
+------ dispatch special - 50 ------------------
+
+dispatch_special: 8406084, 8406728
+-- signature id = 50
+-- code offset  = 0
+-- flags        = 5
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- native
+a0x8046C8: 
+OPCODE (0x84) iinc
+0x8046CB: 
+OPCODE (0xA7) goto
+0x8046BD: 
+OPCODE (0x1B) iload_1
+0x8046BE: 
+OPCODE (0x10) bipush
+0x8046C0: 
+OPCODE (0xA2) if_icmpge
+0x8046CE: 
+OPCODE (0x3) iconst_0
+0x8046CF: 
+OPCODE (0x3C) istore_1
+0x8046D0: 
+OPCODE (0x1B) iload_1
+0x8046D1: 
+OPCODE (0x10) bipush
+0x8046D3: 
+OPCODE (0xA2) if_icmpge
+0x8046D6: 
+OPCODE (0x1B) iload_1
+0x8046D7: 
+OPCODE (0xB8) invokestatic
+dispatch_special_checked: 21, 2, 8406746, 8406743
+
+------ dispatch special - 58 ------------------
+
+dispatch_special: 8406096, 8406746
+-- signature id = 58
+-- code offset  = 1798
+-- flags        = 4
+-- num params   = 1
+-- stack ptr    = 8425056
+-- max stack ptr= 8425040
+-- param[0]    = 0
+pc set to 0x804716
+New array of type 0, length 7
+Allocate 16 - free 7956
+Array ptr=8424864
+Assertion violation: 37
+</pre>
+</div>
+</div>
+</div>
+    <div class="fail"> TestStringBuffer: Fail
+
+<br/>
+Source:
+<div class="source">
+<html>
+<head>
+  <title>TestStringBuffer.java</title>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<pre>
+<a name="line1"> 1</a> <strong>public</strong> <strong>class</strong> <font color="#2040a0">TestStringBuffer</font>
+<a name="line2"> 2</a> <font color="4444FF"><strong>{</strong></font>
+<a name="line3"> 3</a>         
+<a name="line4"> 4</a>     <strong>public</strong> <strong>static</strong> <strong>void</strong> <font color="#2040a0">main</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">String</font> <font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font><font color="#2040a0">args</font><font color="4444FF"><strong>)</strong></font>
+<a name="line5"> 5</a>     <font color="4444FF"><strong>{</strong></font>
+<a name="line6"> 6</a>         <font color="#2040a0">StringBuffer</font> <font color="#2040a0">s1</font> <font color="4444FF">=</font> <strong>new</strong> <font color="#2040a0">StringBuffer</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line7"> 7</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;2^10=&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line8"> 8</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">1024</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line9"> 9</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;!&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line10">10</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;2^10=1024!&quot;</font><font color="4444FF">+</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">s1</font>.<font color="#2040a0">toString</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line11">11</a> 
+<a name="line12">12</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">1</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line13">13</a>                 
+<a name="line14">14</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">delete</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">0</font>,<font color="#FF0000">30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line15">15</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;one=&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line16">16</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">1.0</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line17">17</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;!!&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line18">18</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;one=1.0!!&quot;</font><font color="4444FF">+</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">s1</font>.<font color="#2040a0">toString</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line19">19</a>         
+<a name="line20">20</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">2</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line21">21</a>                 
+<a name="line22">22</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">delete</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">0</font>,<font color="#FF0000">30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line23">23</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi=&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line24">24</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">3.1415927</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line25">25</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;!&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line26">26</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi=3.1415927!&quot;</font><font color="4444FF">+</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">s1</font>.<font color="#2040a0">toString</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line27">27</a>         
+<a name="line28">28</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">3</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line29">29</a>                 
+<a name="line30">30</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">delete</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">0</font>,<font color="#FF0000">30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line31">31</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi!=&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line32">32</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="4444FF">-</font><font color="#FF0000">3.1415927</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line33">33</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;!&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line34">34</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi!=-3.1415927!&quot;</font><font color="4444FF">+</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">s1</font>.<font color="#2040a0">toString</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line35">35</a>         
+<a name="line36">36</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">4</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line37">37</a>                 
+<a name="line38">38</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">delete</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">0</font>,<font color="#FF0000">30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line39">39</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi!=&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line40">40</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">3.1415927e30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line41">41</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;!&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line42">42</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi!=3.1415927E30!&quot;</font><font color="4444FF">+</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">s1</font>.<font color="#2040a0">toString</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line43">43</a>         
+<a name="line44">44</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">5</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line45">45</a>                 
+<a name="line46">46</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">delete</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">0</font>,<font color="#FF0000">30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line47">47</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi!=&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line48">48</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">3.1415927e-30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line49">49</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;!&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line50">50</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi!=3.1415925E-30!&quot;</font><font color="4444FF">+</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">s1</font>.<font color="#2040a0">toString</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line51">51</a>         
+<a name="line52">52</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">6</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line53">53</a>                 
+<a name="line54">54</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">delete</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">0</font>,<font color="#FF0000">30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line55">55</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi!=&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line56">56</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="4444FF">-</font><font color="#FF0000">3.1415927e30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line57">57</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;!&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line58">58</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi!=-3.1415927E30!&quot;</font><font color="4444FF">+</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">s1</font>.<font color="#2040a0">toString</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line59">59</a>         
+<a name="line60">60</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">7</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line61">61</a>                 
+<a name="line62">62</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">delete</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">0</font>,<font color="#FF0000">30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line63">63</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi!=&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line64">64</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="4444FF">-</font><font color="#FF0000">3.1415927e-30</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line65">65</a>         <font color="#2040a0">s1</font>.<font color="#2040a0">append</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;!&quot;</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line66">66</a>         <font color="#2040a0">Console</font>.<font color="#2040a0">writeln</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;pi!=-3.1415925E-30!&quot;</font><font color="4444FF">+</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">s1</font>.<font color="#2040a0">toString</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>        
+<a name="line67">67</a>     <font color="4444FF"><strong>}</strong></font>
+<a name="line68">68</a> <font color="4444FF"><strong>}</strong></font>
+
+</pre>
+<hr>
+syntax highlighted by <a href="http://www.palfrader.org/code2html">Code2HTML</a>, v. 0.9.1
+</body>
+</html>
+</div>
+
+
+Compiler output:
+<div class="source">
+<pre>
+</pre>
+</div>
+
+JVM output:
+<div class="source">
+<pre>
+2^10=1024!2^10=1024!
+1
+one=1.0!!one=1.0!!
+2
+pi=3.1415927!pi=3.1415927!
+3
+pi!=-3.1415927!pi!=-3.1415927!
+4
+pi!=3.1415927E30!pi!=3.1415927E30!
+5
+pi!=3.1415925E-30!pi!=3.1415927E-30!
+6
+pi!=-3.1415927E30!pi!=-3.1415927E30!
+7
+pi!=-3.1415925E-30!pi!=-3.1415927E-30!
+</pre>
+</div>
+TVM output:
+<div class="source">
+<pre>
+Reading binary TestStringBuffer.tvm
+Installing binary 34349072
+Checking validity of magic number
+New object for class 5
+Allocate 2 - free 8186
+new_object_for_class: returning 34370252
+New object for class 6
+Allocate 2 - free 8184
+new_object_for_class: returning 34370248
+New object for class 7
+Allocate 2 - free 8182
+new_object_for_class: returning 34370244
+New object for class 8
+Allocate 2 - free 8180
+new_object_for_class: returning 34370240
+New object for class 9
+Allocate 2 - free 8178
+new_object_for_class: returning 34370236
+New object for class 10
+Allocate 2 - free 8176
+new_object_for_class: returning 34370232
+New object for class 11
+Allocate 2 - free 8174
+new_object_for_class: returning 34370228
+New object for class 12
+Allocate 2 - free 8172
+new_object_for_class: returning 34370224
+New object for class 13
+Allocate 2 - free 8170
+new_object_for_class: returning 34370220
+New object for class 14
+Allocate 2 - free 8168
+new_object_for_class: returning 34370216
+New object for class 15
+Allocate 2 - free 8166
+new_object_for_class: returning 34370212
+New object for class 4
+Allocate 2 - free 8164
+new_object_for_class: returning 34370208
+New object for class 1
+Allocate 18 - free 8146
+new_object_for_class: returning 34370172
+Created bootThread: 34370172. Initializing...
+Setting intial priority to 5
+New array of type 1, length 4
+Allocate 82 - free 8064
+Array ptr=34370008
+New array of type 10, length 10
+Allocate 22 - free 8042
+Array ptr=34369964
+Engine starting.
+switching thread: 140
+------ switch_thread: currentThread at 34370172
+switchThread: current stack frame: 0
+Checking state of thread 34370172(1)(s=2,p=5,i=-128,d=0)
+Starting thread 34370172: 1
+
+------ dispatch special - 0 ------------------
+
+dispatch_special: 34350128, 0
+-- signature id = 0
+-- code offset  = 1827
+-- flags        = 4
+-- num params   = 1
+-- stack ptr    = 34369968
+-- max stack ptr= 34370008
+pc set to 0x20C2733
+Found a non-daemon thread 34370172: 1(3)
+switch_thread: done processing thread 34370172: 1
+currentThread=34370172, ndr=1
+Leaving switch_thread()
+Current thread is 34370172: 1(3)
+getting current stack frame...
+updating registers...
+done updating registers
+done switching thread
+0x20C2733: 
+OPCODE (0xBB) new
+dispatch_static_initializer: has clinit: 34349298, 34350899
+
+------ dispatch special - 3 ------------------
+
+dispatch_special: 34350320, 34350899
+-- signature id = 3
+-- code offset  = 3091
+-- flags        = 4
+-- num params   = 0
+-- stack ptr    = 34369976
+-- max stack ptr= 34370008
+pc set to 0x20C2C23
+New object checked returning null
+0x20C2C23: 
+OPCODE (0x10) bipush
+0x20C2C25: 
+OPCODE (0xBC) newarray
+New array of type 5, length 10
+Allocate 12 - free 8030
+Array ptr=34369940
+0x20C2C27: 
+OPCODE (0x59) dup
+0x20C2C28: 
+OPCODE (0x3) iconst_0
+0x20C2C29: 
+OPCODE (0x10) bipush
+0x20C2C2B: 
+OPCODE (0x55) castore
+0x20C2C2C: 
+OPCODE (0x59) dup
+0x20C2C2D: 
+OPCODE (0x4) iconst_1
+0x20C2C2E: 
+OPCODE (0x10) bipush
+0x20C2C30: 
+OPCODE (0x55) castore
+0x20C2C31: 
+OPCODE (0x59) dup
+0x20C2C32: 
+OPCODE (0x5) iconst_2
+0x20C2C33: 
+OPCODE (0x10) bipush
+0x20C2C35: 
+OPCODE (0x55) castore
+0x20C2C36: 
+OPCODE (0x59) dup
+0x20C2C37: 
+OPCODE (0x6) iconst_3
+0x20C2C38: 
+OPCODE (0x10) bipush
+0x20C2C3A: 
+OPCODE (0x55) castore
+0x20C2C3B: 
+OPCODE (0x59) dup
+0x20C2C3C: 
+OPCODE (0x7) iconst_4
+0x20C2C3D: 
+OPCODE (0x10) bipush
+0x20C2C3F: 
+OPCODE (0x55) castore
+0x20C2C40: 
+OPCODE (0x59) dup
+0x20C2C41: 
+OPCODE (0x8) iconst_5
+0x20C2C42: 
+OPCODE (0x10) bipush
+0x20C2C44: 
+OPCODE (0x55) castore
+0x20C2C45: 
+OPCODE (0x59) dup
+0x20C2C46: 
+OPCODE (0x10) bipush
+0x20C2C48: 
+OPCODE (0x10) bipush
+0x20C2C4A: 
+OPCODE (0x55) castore
+0x20C2C4B: 
+OPCODE (0x59) dup
+0x20C2C4C: 
+OPCODE (0x10) bipush
+0x20C2C4E: 
+OPCODE (0x10) bipush
+0x20C2C50: 
+OPCODE (0x55) castore
+0x20C2C51: 
+OPCODE (0x59) dup
+0x20C2C52: 
+OPCODE (0x10) bipush
+0x20C2C54: 
+OPCODE (0x10) bipush
+0x20C2C56: 
+OPCODE (0x55) castore
+0x20C2C57: 
+OPCODE (0x59) dup
+0x20C2C58: 
+OPCODE (0x10) bipush
+0x20C2C5A: 
+OPCODE (0x10) bipush
+0x20C2C5C: 
+OPCODE (0x55) castore
+0x20C2C5D: 
+OPCODE (0xB3) putstatic
+---  GET/PUTSTATIC --- (21, 3)
+fieldSize  = 4
+fbase1  = 34349380
+0x20C2C60: 
+OPCODE (0xB1) return
+
+------ return ----- 3 ------------------
+
+do_return: method: 3  #  num. words: 0
+do_return: stack frame array size: 2
+do_return: stack reset to:
+-- stack ptr = 34369976
+0x20C2733: 
+OPCODE (0xBB) new
+New object for class 21
+Allocate 6 - free 8024
+new_object_for_class: returning 34369928
+0x20C2736: 
+OPCODE (0x59) dup
+0x20C2737: 
+OPCODE (0x10) bipush
+0x20C2739: 
+OPCODE (0xB7) invokespecial
+dispatch_special_checked: 21, 2, 34350908, 34350905
+
+------ dispatch special - 58 ------------------
+
+dispatch_special: 34350236, 34350908
+-- signature id = 58
+-- code offset  = 2381
+-- flags        = 0
+-- num params   = 2
+-- stack ptr    = 34370000
+-- max stack ptr= 34370008
+-- param[0]    = 34369928
+-- param[1]    = 30
+pc set to 0x20C295D
+0x20C295D: 
+OPCODE (0x2A) aload_0
+### aload_x(thread=1, frame=1, ref=34369992): 34369928
+0x20C295E: 
+OPCODE (0xB7) invokespecial
+dispatch_special_checked: 0, 0, 34351457, 34351454
+
+------ dispatch special - 2 ------------------
+
+dispatch_special: 34349804, 34351457
+-- signature id = 2
+-- code offset  = 1659
+-- flags        = 0
+-- num params   = 1
+-- stack ptr    = 34370008
+-- max stack ptr= 34370008
+-- param[0]    = 34369928
+pc set to 0x20C268B
+0x20C268B: 
+OPCODE (0xB1) return
+
+------ return ----- 2 ------------------
+
+do_return: method: 2  #  num. words: 0
+do_return: stack frame array size: 3
+do_return: stack reset to:
+-- stack ptr = 34370000
+0x20C2961: 
+OPCODE (0x2A) aload_0
+### aload_x(thread=1, frame=1, ref=34369992): 34369928
+0x20C2962: 
+OPCODE (0x3) iconst_0
+0x20C2963: 
+OPCODE (0xB5) putfield
+--- PUTFIELD ---
+fieldType: 10
+fieldSize: 4
+wideWord: 0
+reference: 34369928
+0x20C2966: 
+OPCODE (0x2A) aload_0
+### aload_x(thread=1, frame=1, ref=34369992): 34369928
+0x20C2967: 
+OPCODE (0x1B) iload_1
+0x20C2968: 
+OPCODE (0xBC) newarray
+New array of type 5, length 30
+Allocate 32 - free 7992
+Array ptr=34369864
+0x20C296A: 
+OPCODE (0xB5) putfield
+--- PUTFIELD ---
+fieldType: 0
+fieldSize: 4
+wideWord: 0
+reference: 34369928
+0x20C296D: 
+OPCODE (0xB1) return
+
+------ return ----- 58 ------------------
+
+do_return: method: 58  #  num. words: 0
+do_return: stack frame array size: 2
+do_return: stack reset to:
+-- stack ptr = 34369984
+0x20C273C: 
+OPCODE (0x4C) astore_1
+0x20C273D: 
+OPCODE (0x2B) aload_1
+### aload_x(thread=1, frame=0, ref=34369968): 34369928
+0x20C273E: 
+OPCODE (0x12) ldc
+New object for class 2
+Allocate 4 - free 7988
+new_object_for_class: returning 34369856
+New array of type 5, length 5
+Allocate 7 - free 7981
+Array ptr=34369842
+0x20C2740: 
+OPCODE (0xB6) invokevirtual
+dispatch_virtual 60
+
+------ dispatch special - 60 ------------------
+
+dispatch_special: 34350260, 34350915
+-- signature id = 60
+-- code offset  = 2464
+-- flags        = 0
+-- num params   = 2
+-- stack ptr    = 34369992
+-- max stack ptr= 34370008
+-- param[0]    = 34369928
+-- param[1]    = 34369856
+pc set to 0x20C29B0
+New array of type 10, length 34
+Allocate 70 - free 7911
+Array ptr=34369702
+Deallocate 22 at 34369964 - free 7933
+thread=1, stackTop(34369762), localsBase(34369722)=34369928
+stackBase[1].localsBase(34369722) = 34369928
+stackBase[0].localsBase(34369706) = 0
+0x20C29B0: 
+OPCODE (0x2B) aload_1
+### aload_x(thread=1, frame=1, ref=34369722): 34369856
+0x20C29B1: 
+OPCODE (0xB6) invokevirtual
+dispatch_virtual 55
+
+------ dispatch special - 55 ------------------
+
+dispatch_special: 34349924, 34351540
+-- signature id = 55
+-- code offset  = 1727
+-- flags        = 0
+-- num params   = 1
+-- stack ptr    = 34369770
+-- max stack ptr= 34369842
+-- param[0]    = 34369856
+pc set to 0x20C26CF
+0x20C26CF: 
+OPCODE (0x2A) aload_0
+### aload_x(thread=1, frame=2, ref=34369770): 34369856
+0x20C26D0: 
+OPCODE (0xB4) getfield
+--- GETFIELD ---
+fieldType: 0
+fieldSize: 4
+wideWord: 0
+reference: 34369856
+stackTop: 34369794
+### get_field base=34369860 size=4 pushed=34369856
+### get_field base=34369860 size=4 pushed=0
+Set top word done
+Going home
+0x20C26D3: 
+OPCODE (0xBE) arraylength
+Throw exception
+Num exception handlers=0
+
+------ return ----- 55 ------------------
+
+do_return: method: 55  #  num. words: 0
+do_return: stack frame array size: 3
+do_returSegmentation fault (core dumped)
+</pre>
+</div>
+coredump:<div class="source"><pre>
+[New LWP 17842]
+
+warning: Can't read pathname for load map: Input/output error.
+Core was generated by `emu-lejosrun -v TestStringBuffer.tvm'.
+Program terminated with signal 11, Segmentation fault.
+#0  0x00000000004042ed in throw_exception (exception=0x20c72c0) at ../vmsrc/exceptions.c:103
+103	  gExceptionRecord = (ExceptionRecord *) (get_binary_base() + tempMethodRecord->exceptionTable);
+</pre></div>
+</div>
+</div>
+    <div class="fail"> TestThreadState: Fail
+
+<br/>
+Source:
+<div class="source">
+<html>
+<head>
+  <title>TestThreadState.java</title>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<pre>
+<a name="line1"> 1</a> <strong>public</strong> <strong>class</strong> <font color="#2040a0">TestThreadState</font> <font color="4444FF"><strong>{</strong></font>
+<a name="line2"> 2</a> 	<strong>static</strong> <strong>class</strong> <font color="#2040a0">TestThread</font> <strong>extends</strong> <font color="#2040a0">Thread</font> <font color="4444FF"><strong>{</strong></font>
+<a name="line3"> 3</a> 		<strong>public</strong> <strong>void</strong> <font color="#2040a0">run</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line4"> 4</a> 			<strong>try</strong> <font color="4444FF"><strong>{</strong></font>
+<a name="line5"> 5</a> 				<font color="#2040a0">sleep</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">5000</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line6"> 6</a> 			<font color="4444FF"><strong>}</strong></font> <strong>catch</strong> <font color="4444FF"><strong>(</strong></font><font color="#2040a0">InterruptedException</font> <font color="#2040a0">e</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line7"> 7</a> 				<font color="#2040a0">Assertion</font>.<font color="#2040a0">test</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;Sleep interrupted&quot;</font>, <strong>true</strong><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line8"> 8</a> 			<font color="4444FF"><strong>}</strong></font>
+<a name="line9"> 9</a> 		<font color="4444FF"><strong>}</strong></font>
+<a name="line10">10</a> 	<font color="4444FF"><strong>}</strong></font>
+<a name="line11">11</a> 	<strong>public</strong> <strong>static</strong> <strong>void</strong> <font color="#2040a0">main</font><font color="4444FF"><strong>(</strong></font><font color="#2040a0">String</font><font color="4444FF"><strong>[</strong></font><font color="4444FF"><strong>]</strong></font> <font color="#2040a0">args</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line12">12</a> 		<strong>try</strong> <font color="4444FF"><strong>{</strong></font>
+<a name="line13">13</a> 			<font color="#2040a0">Thread</font> <font color="#2040a0">t</font> <font color="4444FF">=</font> <strong>new</strong> <font color="#2040a0">TestThread</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line14">14</a> 			<font color="#2040a0">Assertion</font>.<font color="#2040a0">test</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;Alive1&quot;</font>, <font color="4444FF">!</font><font color="#2040a0">t</font>.<font color="#2040a0">isAlive</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line15">15</a> 			<font color="#2040a0">t</font>.<font color="#2040a0">start</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line16">16</a> 			<font color="#2040a0">Thread</font>.<font color="#2040a0">yield</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line17">17</a> 			<font color="#2040a0">Assertion</font>.<font color="#2040a0">test</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;Not alive&quot;</font>, <font color="#2040a0">t</font>.<font color="#2040a0">isAlive</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line18">18</a> 			<font color="#2040a0">t</font>.<font color="#2040a0">interrupt</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line19">19</a> 			<font color="#2040a0">Thread</font>.<font color="#2040a0">currentThread</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font>.<font color="#2040a0">sleep</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">500</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line20">20</a> 			<font color="#2040a0">Assertion</font>.<font color="#2040a0">test</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;Alive2&quot;</font>, <font color="4444FF">!</font><font color="#2040a0">t</font>.<font color="#2040a0">isAlive</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line21">21</a> 			<strong>boolean</strong> <font color="#2040a0">ex</font> <font color="4444FF">=</font> <strong>false</strong><font color="4444FF">;</font>
+<a name="line22">22</a> 			<strong>try</strong> <font color="4444FF"><strong>{</strong></font>
+<a name="line23">23</a> 				<font color="#2040a0">t</font>.<font color="#2040a0">start</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line24">24</a> 			<font color="4444FF"><strong>}</strong></font> <strong>catch</strong> <font color="4444FF"><strong>(</strong></font><font color="#2040a0">IllegalStateException</font> <font color="#2040a0">ise</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line25">25</a> 				<font color="#2040a0">ex</font> <font color="4444FF">=</font> <strong>true</strong><font color="4444FF">;</font>
+<a name="line26">26</a> 			<font color="4444FF"><strong>}</strong></font>
+<a name="line27">27</a> 			<font color="#2040a0">Assertion</font>.<font color="#2040a0">test</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;No exception&quot;</font>, <font color="#2040a0">ex</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line28">28</a> 			<font color="#2040a0">ex</font> <font color="4444FF">=</font> <strong>false</strong><font color="4444FF">;</font>
+<a name="line29">29</a> 			<strong>try</strong>  <font color="4444FF"><strong>{</strong></font>
+<a name="line30">30</a> 				<font color="#444444">// Run out of memory whilst creating threads:</font>
+<a name="line31">31</a> 				<strong>while</strong> <font color="4444FF"><strong>(</strong></font><strong>true</strong><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line32">32</a> 					<font color="#2040a0">t</font> <font color="4444FF">=</font> <strong>new</strong> <font color="#2040a0">TestThread</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line33">33</a> 					<font color="#2040a0">t</font>.<font color="#2040a0">start</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line34">34</a> 					<font color="#2040a0">Thread</font>.<font color="#2040a0">yield</font><font color="4444FF"><strong>(</strong></font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line35">35</a> 				<font color="4444FF"><strong>}</strong></font>
+<a name="line36">36</a> 			<font color="4444FF"><strong>}</strong></font> <strong>catch</strong> <font color="4444FF"><strong>(</strong></font><font color="#2040a0">OutOfMemoryError</font> <font color="#2040a0">oome</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line37">37</a> 				<font color="#2040a0">ex</font> <font color="4444FF">=</font> <strong>true</strong><font color="4444FF">;</font>
+<a name="line38">38</a> 			<font color="4444FF"><strong>}</strong></font>
+<a name="line39">39</a> 			<font color="#2040a0">Assertion</font>.<font color="#2040a0">test</font><font color="4444FF"><strong>(</strong></font><font color="#008000">&quot;No OutOfMemoryError&quot;</font>, <font color="#2040a0">ex</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line40">40</a> 		<font color="4444FF"><strong>}</strong></font> <strong>catch</strong> <font color="4444FF"><strong>(</strong></font><font color="#2040a0">Throwable</font> <font color="#2040a0">e</font><font color="4444FF"><strong>)</strong></font> <font color="4444FF"><strong>{</strong></font>
+<a name="line41">41</a> 			<font color="#2040a0">System</font>.<font color="#2040a0">exit</font><font color="4444FF"><strong>(</strong></font><font color="#FF0000">1</font><font color="4444FF"><strong>)</strong></font><font color="4444FF">;</font>
+<a name="line42">42</a> 		<font color="4444FF"><strong>}</strong></font>
+<a name="line43">43</a> 	<font color="4444FF"><strong>}</strong></font>
+<a name="line44">44</a> <font color="4444FF"><strong>}</strong></font>
+
+</pre>
+<hr>
+syntax highlighted by <a href="http://www.palfrader.org/code2html">Code2HTML</a>, v. 0.9.1
+</body>
+</html>
+</div>
+
+
+Compiler output:
+<div class="source">
+<pre>
+</pre>
+</div>
+
+JVM output:
+<div class="source">
+<pre>
+Assertion: Alive1 [ OK ]
+Assertion: Not alive [ OK ]
+Assertion: Sleep interrupted [ OK ]
+Assertion: Alive2 [ OK ]
+</pre>
+</div>
+TVM output:
+<div class="source">
+<pre>
+Segmentation fault (core dumped)
+</pre>
+</div>
+coredump:<div class="source"><pre>
+[New LWP 17908]
+
+warning: Can't read pathname for load map: Input/output error.
+Core was generated by `emu-lejosrun -v TestThreadState.tvm'.
+Program terminated with signal 11, Segmentation fault.
+#0  0x000000000040581d in dispatch_special (methodRecord=0x1fad31c, retAddr=0x1fad703 "\261*\267") at ../vmsrc/language.c:289
+289		printf("stackBase[%d].localsBase(%d) = %d\n", i, (int)stackBase[i].localsBase, (int)(*stackBase[i].localsBase));
+</pre></div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+
