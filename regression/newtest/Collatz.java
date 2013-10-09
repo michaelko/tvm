@@ -12,7 +12,7 @@ class Collatz {
             j--;
             Console.write("Badum"); // + j +"\n");
             
-            /*
+            
             while (i > 5) {
                 if ((i % 2) == 0) {
                     i = i / 2;
@@ -21,7 +21,7 @@ class Collatz {
                     z++;
                 }
             }
-            */
+            
 
         }
         //System.out.println(z);
